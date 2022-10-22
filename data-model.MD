@@ -12,14 +12,14 @@ Accounts (ABC)
 
 - name
 - fund_type : INTERNAL | EXTERNAL
-- balance
-- created
-- updated
 - archived
 
 Internal Source extends (Accounts)
 
 - type
+- balance
+- created
+- updated
 
 External Source extends (Accounts)
 
@@ -27,7 +27,7 @@ External Source extends (Accounts)
 - parent
 
 Transaction
-
+- type : INCOME | EXPENSE | TRANSFER
 - created
 - updated
 - note
