@@ -224,7 +224,7 @@ Having a descriptive commit message which explains the issue being addressed is 
 <a name="code-style"></a>
 ## 7. Code style
 
-<a name="code-style-check"></a>
+<a name="enforcing-code-style-standards"></a>
 ### 7.1 Enforcing code style standards
 
 - TBA (any specific enforcements added to CI/CD pipeline eg linting, etc) 
