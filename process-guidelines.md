@@ -17,7 +17,7 @@
 - [Logging](#logging)
 - [API](#api)
   - [API design](#api-design)
-  - [API documentation](#api-documentation)
+  
 
 
 
@@ -221,9 +221,10 @@ Having a descriptive commit message which explains the issue being addressed is 
 - Put your scripts in a `./scripts` folder. This includes `bash` and `shell` scripts.
 - We create a separate docs repo for storing all design documents and ADRs. 
 
-
+<a name="code-style"></a>
 ## 7. Code style
 
+<a name="code-style-check"></a>
 ### 7.1 Enforcing code style standards
 
 - TBA (any specific enforcements added to CI/CD pipeline eg linting, etc) 
