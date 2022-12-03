@@ -33,12 +33,12 @@ We want to use a client-side storage for our web application:
 
 ### Decision
 
-Decided on IndexDB.
+Decided on IndexedDB.
 
 
 ### Status
 
-Decided on IndexDB against other alternatives.
+Decided on IndexedDB against other alternatives.
 
 ## Details
 
@@ -53,13 +53,13 @@ We want our data to be structured and transactional as we are dealing with finan
 
 ### Constraints
 
-IndexDB has limited storage limits and limited browser compatibility. 
+IndexedDB has limited storage limits and limited browser compatibility. 
 
 
 
 ### Positions
 
-We considered the following options for storage: IndexDB, localStorage and SQLite. 
+We considered the following options for storage: IndexedDB, localStorage and SQLite. 
 
 localStrorage allows only key-value pair storage structure.
 
@@ -74,9 +74,9 @@ localStorage.removeItem('myKey');
 Since we handle sensitive user information, localStorage is not the best approach for us. It is also limited to 5MB across all major browsers.
 
 
-IndexDB allows low-level API for client-side storage of significant amounts of structured data, including files/blobs.
+IndexedDB allows low-level API for client-side storage of significant amounts of structured data, including files/blobs.
 
-Example with IndexDB:
+Example with IndexedDB:
 
 ```js
 const dbName = "the_name";
@@ -126,7 +126,7 @@ CREATE TABLE Account(
 
 ### Argument
 
-Given the scope of our current application and other constraints, indexDB serves our usecase. We decided to use indexDB with the possibility of using SQLite in future.
+Given the scope of our current application and other constraints, IndexedDB serves our usecase. We decided to use IndexedDB with the possibility of using SQLite in future.
 
 
 
